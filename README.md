@@ -32,6 +32,21 @@ This project enables administrators to manage FAQs in multiple languages efficie
 - **Google Translate API** – Automated translations  
 - **Jest** – API testing  
 
+
+## **Screenshots**  
+
+🚀 **Add FAQ Page**  
+![image](https://github.com/user-attachments/assets/ac272659-2fc1-45a0-96cc-5ce786de57a1)
+ 
+
+📋 **FAQ List Page**  
+![image](https://github.com/user-attachments/assets/fc935296-31e3-47f0-a8ff-6e91603abf90)
+ 
+
+🔍 **Multilingual FAQ Display**  
+![image](https://github.com/user-attachments/assets/dafdb1f6-9fc9-4ffc-bc84-80787657ea10)
+
+
 ---
 
 ## **Setup Instructions**  
@@ -76,28 +91,13 @@ npm run dev
 
 #### Frontend:  
 ```bash
-npm start
+npm run dev
 ```
 
 Backend runs at `http://localhost:3000`, and frontend runs at `http://localhost:5173`.  
 
 ---
 
-## **Screenshots**  
-
-🚀 **Add FAQ Page**  
-![image](https://github.com/user-attachments/assets/ac272659-2fc1-45a0-96cc-5ce786de57a1)
- 
-
-📋 **FAQ List Page**  
-![image](https://github.com/user-attachments/assets/fc935296-31e3-47f0-a8ff-6e91603abf90)
- 
-
-🔍 **Multilingual FAQ Display**  
-![image](https://github.com/user-attachments/assets/dafdb1f6-9fc9-4ffc-bc84-80787657ea10)
-
-
----
 
 ## **Admin Panel Features**  
 
