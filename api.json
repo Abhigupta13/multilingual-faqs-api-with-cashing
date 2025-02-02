@@ -1,86 +1,183 @@
 {
-    "info": {
-      "_postman_id": "abcd-1234-xyz-5678",
-      "name": "Multilingual FAQs API",
-      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-    },
-    "item": [
-      {
-        "name": "Fetch FAQs (Default - English)",
-        "request": {
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "http://localhost:3000/api/faqs",
-            "protocol": "http",
-            "host": ["localhost"],
-            "port": "3000",
-            "path": ["api", "faqs"]
-          }
-        }
-      },
-      {
-        "name": "Fetch FAQs in Hindi",
-        "request": {
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "http://localhost:3000/api/faqs?lang=hi",
-            "protocol": "http",
-            "host": ["localhost"],
-            "port": "3000",
-            "path": ["api", "faqs"],
-            "query": [{"key": "lang", "value": "hi"}]
-          }
-        }
-      },
-      {
-        "name": "Fetch FAQs in Bengali",
-        "request": {
-          "method": "GET",
-          "header": [],
-          "url": {
-            "raw": "http://localhost:3000/api/faqs?lang=bn",
-            "protocol": "http",
-            "host": ["localhost"],
-            "port": "3000",
-            "path": ["api", "faqs"],
-            "query": [{"key": "lang", "value": "bn"}]
-          }
-        }
-      },
-      {
-        "name": "Create a New FAQ",
-        "request": {
-          "method": "POST",
-          "header": [{"key": "Content-Type", "value": "application/json"}],
-          "body": {
-            "mode": "raw",
-            "raw": "{\n  \"question\": \"What is Redis?\",\n  \"answer\": \"Redis is an in-memory data structure store, used as a database, cache, and message broker.\"\n}"
-          },
-          "url": {
-            "raw": "http://localhost:3000/api/faqs",
-            "protocol": "http",
-            "host": ["localhost"],
-            "port": "3000",
-            "path": ["api", "faqs"]
-          }
-        }
-      },
-      {
-        "name": "Delete an FAQ",
-        "request": {
-          "method": "DELETE",
-          "header": [],
-          "url": {
-            "raw": "http://localhost:3000/api/faqs/1",
-            "protocol": "http",
-            "host": ["localhost"],
-            "port": "3000",
-            "path": ["api", "faqs", "1"]
-          }
-        }
-      }
-    ]
-  }
-  
+	"info": {
+		"_postman_id": "41c85bbf-c8d6-4abc-9071-fab9f6d4d182",
+		"name": "Multilingual FAQs API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27806094"
+	},
+	"item": [
+		{
+			"name": "Fetch FAQs (Default - English)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faqs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch FAQs in Hindi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faqs?lang=hi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs"
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "hi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch FAQs in Bengali",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faqs?lang=bn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs"
+					],
+					"query": [
+						{
+							"key": "lang",
+							"value": "bn"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a New FAQ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "//   {\n//     \"question\": \"What is Redis?\",\n//     \"answer\": \"Redis is an in-memory data structure store, used as a database, cache, and message broker.\"\n//   }\n//   {\n//     \"question\": \"What is Node.js?\",\n//     \"answer\": \"Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.\"\n//   }\n//  {\n//     \"question\": \"What is Express.js?\",\n//     \"answer\": \"Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications.\"\n//   }\n//   {\n//     \"question\": \"What is REST API?\",\n//     \"answer\": \"REST API is an application programming interface that follows REST principles to enable communication between client and server.\"\n//   }\n//   {\n//     \"question\": \"What is MongoDB?\",\n//     \"answer\": \"MongoDB is a NoSQL database that stores data in JSON-like documents, making it highly flexible and scalable.\"\n//   }\n//   {\n//     \"question\": \"What is Jest?\",\n//     \"answer\": \"Jest is a JavaScript testing framework developed by Facebook, commonly used for unit testing applications.\"\n//   }\n//   {\n//     \"question\": \"What is Docker?\",\n//     \"answer\": \"Docker is a platform that allows developers to build, share, and run applications inside lightweight containers.\"\n//   }\n//   {\n//     \"question\": \"What is Redis caching?\",\n//     \"answer\": \"Redis caching is the process of storing frequently accessed data in Redis to reduce latency and improve performance.\"\n//   }\n//   {\n//     \"question\": \"What is CI/CD?\",\n//     \"answer\": \"CI/CD stands for Continuous Integration and Continuous Deployment, a DevOps practice to automate code testing and deployment.\"\n//   }\n  {\n    \"question\": \"What is Google Translate API?\",\n    \"answer\": \"Google Translate API is a cloud service that allows applications to translate text between different languages programmatically.\"\n  }\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/faqs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an FAQ by ID",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "//   {\n//     \"question\": \"What is Redis?\",\n//     \"answer\": \"Redis is an in-memory data structure store, used as a database, cache, and message broker.\"\n//   }\n//   {\n//     \"question\": \"What is Node.js?\",\n//     \"answer\": \"Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.\"\n//   }\n//  {\n//     \"question\": \"What is Express.js?\",\n//     \"answer\": \"Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features to develop web and mobile applications.\"\n//   }\n  {\n    \"question\": \"What is REST API?\",\n    \"answer\": \"REST API is an application programming interface that follows REST principles to enable communication between client and server.\"\n  }\n//   {\n//     \"question\": \"What is MongoDB?\",\n//     \"answer\": \"MongoDB is a NoSQL database that stores data in JSON-like documents, making it highly flexible and scalable.\"\n//   }\n//   {\n//     \"question\": \"What is Jest?\",\n//     \"answer\": \"Jest is a JavaScript testing framework developed by Facebook, commonly used for unit testing applications.\"\n//   }\n//   {\n//     \"question\": \"What is Docker?\",\n//     \"answer\": \"Docker is a platform that allows developers to build, share, and run applications inside lightweight containers.\"\n//   }\n//   {\n//     \"question\": \"What is Redis caching?\",\n//     \"answer\": \"Redis caching is the process of storing frequently accessed data in Redis to reduce latency and improve performance.\"\n//   }\n//   {\n//     \"question\": \"What is CI/CD?\",\n//     \"answer\": \"CI/CD stands for Continuous Integration and Continuous Deployment, a DevOps practice to automate code testing and deployment.\"\n//   }\n//   {\n//     \"question\": \"What is Google Translate API?\",\n//     \"answer\": \"Google Translate API is a cloud service that allows applications to translate text between different languages programmatically.\"\n//   }\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/faqs/679fae12c7e76e9282f04b02",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs",
+						"679fae12c7e76e9282f04b02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an FAQ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faqs/679fb7f9baaa90fc0d1503d5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs",
+						"679fb7f9baaa90fc0d1503d5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get an FAQ by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/faqs/679fb3bdb7cc030763c86f43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"faqs",
+						"679fb3bdb7cc030763c86f43"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

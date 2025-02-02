@@ -23,7 +23,7 @@ app.use(errorHandler);
 
 
 // Start Server
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 const startServer = async () => {
   await connectDB(); 
   const redisClient = await connectRedis();
