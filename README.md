@@ -1,4 +1,4 @@
-# **Multilingual FAQ Management with Caching using Redis**  
+# **Multilingual FAQ Management DashBoard with Caching using Redis**  
 
 ## **Overview**  
 
@@ -86,13 +86,16 @@ Backend runs at `http://localhost:3000`, and frontend runs at `http://localhost:
 ## **Screenshots**  
 
 🚀 **Add FAQ Page**  
-*_(Insert Screenshot Here)_*  
+![image](https://github.com/user-attachments/assets/ac272659-2fc1-45a0-96cc-5ce786de57a1)
+ 
 
 📋 **FAQ List Page**  
-*_(Insert Screenshot Here)_*  
+![image](https://github.com/user-attachments/assets/fc935296-31e3-47f0-a8ff-6e91603abf90)
+ 
 
 🔍 **Multilingual FAQ Display**  
-*_(Insert Screenshot Here)_*  
+![image](https://github.com/user-attachments/assets/dafdb1f6-9fc9-4ffc-bc84-80787657ea10)
+
 
 ---
 
