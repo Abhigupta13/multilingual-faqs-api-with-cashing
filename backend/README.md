@@ -38,29 +38,11 @@ This project allows administrators to manage FAQs in multiple languages with cac
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/multilingual-faq-dashboard.git
+git clone https://github.com/Abhigupta13/multilingual-faqs-api-with-cashing.git
 cd multilingual-faq-dashboard
 ```
 
-### 2. Install Frontend Dependencies:
-
-Navigate to the frontend directory and install the dependencies:
-
-```bash
-cd frontend
-npm install
-```
-
-### 3. Install Backend Dependencies:
-
-Navigate to the backend directory and install the dependencies:
-
-```bash
-cd backend
-npm install
-```
-
-### 4. Set Up Environment Variables:
+###  Set Up Environment Variables:
 
 For the backend, create a `.env` file and add your environment variables:
 
@@ -72,7 +54,7 @@ REDIS_PORT=<your-redis-port>
 GOOGLE_TRANSLATE_API_KEY=<your-google-translate-api-key>
 ```
 
-### 5. Run the Application:
+###  Run the Application:
 
 - **Backend**: In the backend directory, run:
 
