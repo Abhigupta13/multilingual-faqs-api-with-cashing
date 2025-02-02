@@ -1,7 +1,12 @@
+const { connectRedis, getClient } = require("../config/redis");
 
 const cacheFAQ = async (lang, faqs) => {
   try {
-    await client.setEx(`faqs_${lang}`, 3600, JSON.stringify(faqs));
+    const client = getClient() || (await connectRedis()); 
+    const uniqueFAQs = faqs.filter(
+      (faq, index, self) => index === self.findIndex((t) => t._id === faq._id)
+    );
+    await client.setEx(`faqs_${lang}`, 1800, JSON.stringify(uniqueFAQs));
     console.log(`[Cache Success]: FAQs cached for language ${lang}`);
   } catch (error) {
     console.error(`[Cache Error]: ${error.message}`);
@@ -10,6 +15,7 @@ const cacheFAQ = async (lang, faqs) => {
 
 const getCachedFAQ = async (lang) => {
   try {
+    const client = getClient() || (await connectRedis()); // Ensure Redis client is available
     const data = await client.get(`faqs_${lang}`);
     return data ? JSON.parse(data) : null;
   } catch (error) {
@@ -17,5 +23,6 @@ const getCachedFAQ = async (lang) => {
     return null;
   }
 };
+
 
 module.exports = { cacheFAQ, getCachedFAQ };

@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const faqRoutes = require("./src/routes/faqRoutes");
 const connectDB = require("./src/config/db");
 const errorHandler = require("./src/middleware/errorHandler");
-const connectRedis = require("./src/config/redis");
+const {connectRedis} = require("./src/config/redis");
 
 dotenv.config();
 
