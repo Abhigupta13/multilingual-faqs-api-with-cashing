@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/bharatfd.svg'
+import logo from '../assets/faqs.png'
 import { 
   HomeIcon, 
   PlusCircleIcon, 
@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-blue-300 to-blue-800 shadow-md">
       <div className="container mx-auto px-20 py-4 flex justify-between items-center">
         
-        <div className="text-2xl flex font-bold text-white">
-        <img src={logo} alt="" srcset="" className='w-50' />
+        <div className="text-4xl flex font-bold text-blue-900">
+        ThinkFAQ
         
         </div>
 

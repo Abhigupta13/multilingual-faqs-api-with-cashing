@@ -42,14 +42,13 @@ const FAQController = {
       const lang = req.query.lang || "en";
       const cacheKey = `faqs_${lang}`;
       
-     
       const cachedData = await cache.get(cacheKey);
-      if (cachedData) {
+      if (cachedData && cachedData.length > 0) {
         console.log("Serving from cache");
         return res.status(200).json(cachedData);
       }
 
-      
+      // If no cached data, fetch from MongoDB
       const faqs = await FAQ.find({}).lean(); 
 
       if (!faqs.length) {
@@ -64,7 +63,6 @@ const FAQController = {
         })
       );
 
-      
       await cache.set(cacheKey, 3600, translatedFAQs);
       console.log("Caching FAQs");
 
